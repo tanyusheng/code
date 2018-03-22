@@ -1,3 +1,6 @@
+/**
+pat_basic_1001
+*/
 #include <stdio.h>
 int main(int argc, char const *argv[]) {
   int n,step=0;
