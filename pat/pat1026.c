@@ -4,12 +4,12 @@ pat_basic_1026
 #include "stdio.h"
 int main() {
   const int CLK_TCK = 100;
-  long long c1,c2;
+  int c1,c2;
   int t,h,m,s;
-  scanf("%lld%lld",&c1,&c2);
+  scanf("%d%d",&c1,&c2);
   if (c1<c2)
   {
-    if (c2-c1>=50) {
+    if ((c2-c1)%100>=50) {
       t = (c2-c1)/CLK_TCK+1;
     }else{
       t = (c2-c1)/CLK_TCK;
